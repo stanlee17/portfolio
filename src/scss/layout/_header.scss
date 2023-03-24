@@ -1,0 +1,15 @@
+@use '../abstracts/' as *;
+
+.navbar {
+  background-color: transparent;
+  color: $white;
+
+  .navbar-brand,
+  .nav-link {
+    color: $white;
+
+    &:hover {
+      color: $primaryColor;
+    }
+  }
+}

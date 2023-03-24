@@ -1,0 +1,27 @@
+@use '../abstracts/' as *;
+
+body {
+  font-family: $primaryFont;
+  background: $darkBgColor;
+  box-sizing: border-box;
+  color: $white;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.apptheme {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  flex: 1;
+}
+
+#particles-js {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: -100;
+}

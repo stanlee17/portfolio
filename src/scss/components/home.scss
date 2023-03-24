@@ -1,0 +1,43 @@
+@use '../abstracts/' as *;
+
+.home {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+
+  &-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #181818b7;
+  }
+
+  &-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &-hero {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    & h1 {
+      font-size: 3rem;
+    }
+
+    & h4 {
+      font-size: 1.6rem;
+      color: $primaryColor;
+    }
+  }
+}

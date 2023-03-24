@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+$primaryFont: 'Space Mono', monospace;
+
+// COLORS (https://tailwindcss.com/docs/customizing-colors)
+$primaryColor: #ff7c7c;
+$darkBgColor: #181818;
+$darkColor: #212121;
+$successColor: #16a34a;
+$errorColor: #dc2626;
+
+$white: #ffffff;
+
+// MIXIN: Set text color dynamically
+@mixin setBackground($color) {
+  background-color: $color;
+  color: set-text-color($color);
+}
+// FUNCTIONS
+@function set-text-color($color) {
+  @if (lightness($color) > 70) {
+    @return $complementaryColor;
+  } @else {
+    @return $primaryColor;
+  }
+}
