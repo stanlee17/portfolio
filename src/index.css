@@ -18,15 +18,8 @@ body {
   flex: 1;
 }
 
-#particles-js {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  z-index: -100;
-}
-
 .home {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100vh;
 }
@@ -50,8 +43,8 @@ body {
   top: 0;
   display: flex;
   flex-direction: column;
+  text-align: center;
   justify-content: center;
-  align-items: center;
   color: white;
 }
 .home-hero h1 {
@@ -99,20 +92,38 @@ body {
 }
 
 .about {
-  position: relative;
-  min-height: 80vh;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  line-height: 2;
 }
 .about-me {
-  position: absolute;
-  min-width: 800px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  max-width: 1000px;
+  margin: auto;
   text-align: center;
 }
 .about-me h1 {
   color: #ff7c7c;
+  padding-bottom: 1rem;
 }
+.about-skills {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+.about-skills .tech-name {
+  cursor: default;
+  padding: 0.2rem 1.5rem;
+  margin-top: 0.8rem;
+  margin-right: 1rem;
+  border-radius: 10rem;
+  display: inline-block;
+  border: 1px solid #ff7c7c;
+  color: #ff7c7c;
+  font-size: 0.9rem;
+}
+
 footer {
   text-align: center;
   background: #212121;
@@ -120,6 +131,8 @@ footer {
 }
 
 .navbar {
+  position: fixed;
+  width: 100%;
   background-color: transparent;
   color: #ffffff;
 }

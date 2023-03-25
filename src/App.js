@@ -3,7 +3,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 // COMPONENTS:
-import Header from './components/layout/Header';
+import Layout from './components/layout/Layout';
 
 // PAGES:
 import Home from './pages/Home';
@@ -12,11 +12,12 @@ import NotFound from './pages/NotFound';
 function App() {
   return (
     <div className="app">
-      <Header />
       <Routes>
         {/* MAIN LAYOUT WRAPPER & ROUTED CHILDREN */}
-        <Route index element={<Home />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="*" element={<NotFound />} />
+        </Route>
       </Routes>
     </div>
   );

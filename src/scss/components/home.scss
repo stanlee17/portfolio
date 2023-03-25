@@ -1,7 +1,7 @@
 @use '../abstracts/' as *;
 
 .home {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100vh;
 
@@ -27,8 +27,9 @@
     top: 0;
     display: flex;
     flex-direction: column;
+    text-align: center;
     justify-content: center;
-    align-items: center;
+
     color: white;
 
     & h1 {
