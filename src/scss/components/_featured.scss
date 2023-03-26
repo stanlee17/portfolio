@@ -1,0 +1,57 @@
+@use '../abstracts/' as *;
+
+.featured {
+  padding: 5rem 0;
+
+  &-wrapper {
+    display: flex;
+  }
+
+  &-image {
+    min-width: 500px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+
+  &-content {
+    & h5 {
+      font-size: 1.1rem;
+      color: $primaryColor;
+    }
+
+    & h3 {
+      margin-bottom: 0.8rem;
+      font-weight: bold;
+    }
+  }
+
+  &-desc {
+    background-color: $darkColor;
+    border-radius: 5px;
+    padding: 2rem;
+
+    & p {
+      margin: 0;
+    }
+  }
+
+  &-tech-stack {
+    display: flex;
+    margin-top: 0.8rem;
+    margin-bottom: 1.5rem;
+
+    & div {
+      font-size: 0.9rem;
+      transition: all 0.5s;
+    }
+
+    & div:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+
+    & div:hover {
+      cursor: default;
+      color: $primaryColor;
+    }
+  }
+}

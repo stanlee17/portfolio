@@ -1,7 +1,9 @@
 import React, { Fragment } from 'react';
-import About from './About';
 import background from '../assets/background.mp4';
 import { TypeAnimation } from 'react-type-animation';
+
+import About from '../components/sections/About';
+import Projects from '../components/sections/Projects';
 
 const Home = () => {
   return (
@@ -24,6 +26,7 @@ const Home = () => {
         </div>
       </div>
       <About />
+      <Projects />
     </Fragment>
   );
 };

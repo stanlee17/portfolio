@@ -1,0 +1,14 @@
+@use '../abstracts/' as *;
+
+.button-link {
+  color: $primaryColor;
+  padding: 0.5rem 1.2rem;
+  border: 1px solid $primaryColor;
+  border-radius: 5px;
+  transition: all 0.5s;
+
+  &:hover {
+    color: $primaryColor;
+    background-color: $primaryColorHover;
+  }
+}

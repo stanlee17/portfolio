@@ -18,6 +18,100 @@ body {
   flex: 1;
 }
 
+a {
+  text-decoration: none;
+}
+
+.about {
+  padding: 15rem 0 10rem 0;
+  display: flex;
+  flex-direction: column;
+  line-height: 2;
+}
+.about-me {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+.about-me h2 {
+  color: #ff7c7c;
+  padding-bottom: 1rem;
+  font-weight: bold;
+}
+.about-skills {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+.about-skills .tech-name {
+  cursor: default;
+  padding: 0.2rem 1.5rem;
+  margin-top: 0.8rem;
+  margin-right: 1rem;
+  border-radius: 10rem;
+  display: inline-block;
+  border: 1px solid #ff7c7c;
+  color: #ff7c7c;
+  font-size: 0.9rem;
+}
+
+.button-link {
+  color: #ff7c7c;
+  padding: 0.5rem 1.2rem;
+  border: 1px solid #ff7c7c;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+.button-link:hover {
+  color: #ff7c7c;
+  background-color: rgba(255, 124, 124, 0.0941176471);
+}
+
+.featured {
+  padding: 5rem 0;
+}
+.featured-wrapper {
+  display: flex;
+}
+.featured-image {
+  min-width: 500px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.featured-content h5 {
+  font-size: 1.1rem;
+  color: #ff7c7c;
+}
+.featured-content h3 {
+  margin-bottom: 0.8rem;
+  font-weight: bold;
+}
+.featured-desc {
+  background-color: #212121;
+  border-radius: 5px;
+  padding: 2rem;
+}
+.featured-desc p {
+  margin: 0;
+}
+.featured-tech-stack {
+  display: flex;
+  margin-top: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+.featured-tech-stack div {
+  font-size: 0.9rem;
+  transition: all 0.5s;
+}
+.featured-tech-stack div:not(:last-child) {
+  margin-right: 1.5rem;
+}
+.featured-tech-stack div:hover {
+  cursor: default;
+  color: #ff7c7c;
+}
+
 .home {
   position: relative;
   width: 100%;
@@ -86,42 +180,19 @@ body {
   font-size: 1.5em;
 }
 
+.projects {
+  padding: 15rem 0;
+  min-height: 90vh;
+}
+.projects h2 {
+  color: #ff7c7c;
+  text-align: center;
+  font-weight: bold;
+}
+
 .custom-spinner {
   height: 150px;
   width: 150px;
-}
-
-.about {
-  min-height: 90vh;
-  display: flex;
-  flex-direction: column;
-  line-height: 2;
-}
-.about-me {
-  max-width: 1000px;
-  margin: auto;
-  text-align: center;
-}
-.about-me h1 {
-  color: #ff7c7c;
-  padding-bottom: 1rem;
-}
-.about-skills {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0.5rem 0;
-  text-align: center;
-}
-.about-skills .tech-name {
-  cursor: default;
-  padding: 0.2rem 1.5rem;
-  margin-top: 0.8rem;
-  margin-right: 1rem;
-  border-radius: 10rem;
-  display: inline-block;
-  border: 1px solid #ff7c7c;
-  color: #ff7c7c;
-  font-size: 0.9rem;
 }
 
 footer {
