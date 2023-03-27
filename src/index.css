@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Tajawal:wght@300;400;700&display=swap");
 body {
   font-family: "Space Mono", monospace;
   background: #181818;
   box-sizing: border-box;
-  color: #ffffff;
+  color: #d6d6d6;
 }
 
 .app {
@@ -25,8 +25,8 @@ a {
 .about {
   padding: 15rem 0 10rem 0;
   display: flex;
+  font-family: "Tajawal", sans-serif;
   flex-direction: column;
-  line-height: 2;
 }
 .about-me {
   max-width: 1000px;
@@ -38,10 +38,12 @@ a {
   padding-bottom: 1rem;
   font-weight: bold;
 }
+.about-me p {
+  font-size: 1.2rem;
+}
 .about-skills {
   max-width: 800px;
   margin: 0 auto;
-  padding: 0.5rem 0;
   text-align: center;
 }
 .about-skills .tech-name {
@@ -53,7 +55,6 @@ a {
   display: inline-block;
   border: 1px solid #ff7c7c;
   color: #ff7c7c;
-  font-size: 0.9rem;
 }
 
 .button-link {
@@ -61,11 +62,33 @@ a {
   padding: 0.5rem 1.2rem;
   border: 1px solid #ff7c7c;
   border-radius: 5px;
+  font-size: 1.1rem;
   transition: all 0.5s;
 }
 .button-link:hover {
   color: #ff7c7c;
   background-color: rgba(255, 124, 124, 0.0941176471);
+}
+
+.contact {
+  font-family: "Tajawal", sans-serif;
+  text-align: center;
+  max-width: 900px;
+  padding: 5rem 0 20rem 0;
+  margin: auto;
+}
+.contact h2 {
+  color: #ff7c7c;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.contact p {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+}
+.contact p span {
+  color: #ff7c7c;
+  font-weight: bold;
 }
 
 .featured {
@@ -101,7 +124,6 @@ a {
   margin-bottom: 1.5rem;
 }
 .featured-tech-stack div {
-  font-size: 0.9rem;
   transition: all 0.5s;
 }
 .featured-tech-stack div:not(:last-child) {
@@ -181,7 +203,8 @@ a {
 }
 
 .projects {
-  padding: 15rem 0;
+  padding: 10rem 0;
+  font-family: "Tajawal", sans-serif;
   min-height: 90vh;
 }
 .projects h2 {
@@ -198,18 +221,18 @@ a {
 footer {
   text-align: center;
   background: #212121;
-  color: #ffffff;
+  color: #d6d6d6;
 }
 
 .navbar {
   position: fixed;
   width: 100%;
   background-color: transparent;
-  color: #ffffff;
+  color: #d6d6d6;
 }
 .navbar .navbar-brand,
 .navbar .nav-link {
-  color: #ffffff;
+  color: #d6d6d6;
 }
 .navbar .navbar-brand:hover,
 .navbar .nav-link:hover {

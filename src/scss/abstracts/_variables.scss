@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Tajawal:wght@300;400;700&display=swap');
+
 $primaryFont: 'Space Mono', monospace;
+$secondaryFont: 'Tajawal', sans-serif;
 
 // COLORS (https://tailwindcss.com/docs/customizing-colors)
 $primaryColor: #ff7c7c;
@@ -9,7 +11,7 @@ $darkColor: #212121;
 $successColor: #16a34a;
 $errorColor: #dc2626;
 
-$white: #ffffff;
+$white: #d6d6d6;
 
 // MIXIN: Set text color dynamically
 @mixin setBackground($color) {

@@ -5,7 +5,7 @@ import MMOList from '../../assets/mmolist.png';
 const Projects = () => {
   return (
     <div className="projects">
-      <h2>Some things that I've built</h2>
+      <h2>Some Things That I've Built</h2>
       <Featured
         title="MMOList"
         description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur

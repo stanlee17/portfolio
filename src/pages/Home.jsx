@@ -4,6 +4,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 import About from '../components/sections/About';
 import Projects from '../components/sections/Projects';
+import Contact from '../components/sections/Contact';
 
 const Home = () => {
   return (
@@ -27,6 +28,7 @@ const Home = () => {
       </div>
       <About />
       <Projects />
+      <Contact />
     </Fragment>
   );
 };

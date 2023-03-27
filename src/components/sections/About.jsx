@@ -9,13 +9,13 @@ const About = () => {
           <h2>About Me</h2>
           <p>
             Hello, My name is Yves but you can also call me Stan if you prefer.
-            Front end development is my specialty as I am more design oriented.
-            Seeing that I am able to create a design and make that a reality to
-            the internet excites me. I’m always willing to learn new
-            technologies and use them to build more projects. Aside from that, I
-            also enjoy fitness, watching anime and playing video games in my
-            spare time. Anyway, here are some of the technologies that I've been
-            working with.
+            Front end development is my specialty as I am more design oriented
+            with high attention to detail. Seeing that I am able to create a
+            design and make that a reality to the internet fascinates me. I’m
+            always willing to learn new technologies and use them to build more
+            projects. Aside from that, I also enjoy fitness, watching anime and
+            playing video games in my spare time. Here are some of the
+            technologies that I've been working with.
           </p>
           <div className="about-skills">
             <div className="tech-name">HTML & CSS</div>

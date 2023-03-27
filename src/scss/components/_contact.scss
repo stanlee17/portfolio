@@ -1,0 +1,25 @@
+@use '../abstracts/' as *;
+
+.contact {
+  font-family: $secondaryFont;
+  text-align: center;
+  max-width: 900px;
+  padding: 5rem 0 20rem 0;
+  margin: auto;
+
+  & h2 {
+    color: $primaryColor;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  & p {
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+
+    & span {
+      color: $primaryColor;
+      font-weight: bold;
+    }
+  }
+}

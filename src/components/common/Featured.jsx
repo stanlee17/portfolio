@@ -21,7 +21,7 @@ const Featured = ({
             ''
           )}
           <div className={`featured-content ${end ? 'text-end' : ''}`}>
-            <h5>Featured Projects</h5>
+            <h5>Featured Project</h5>
             <h3>{title}</h3>
             <div className="featured-desc">
               <p>{description}</p>

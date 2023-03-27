@@ -3,8 +3,8 @@
 .about {
   padding: 15rem 0 10rem 0;
   display: flex;
+  font-family: $secondaryFont;
   flex-direction: column;
-  line-height: 2;
 
   &-me {
     max-width: 1000px;
@@ -16,12 +16,15 @@
       padding-bottom: 1rem;
       font-weight: bold;
     }
+
+    & p {
+      font-size: 1.2rem;
+    }
   }
 
   &-skills {
     max-width: 800px;
     margin: 0 auto;
-    padding: 0.5rem 0;
     text-align: center;
 
     & .tech-name {
@@ -33,7 +36,6 @@
       display: inline-block;
       border: 1px solid $primaryColor;
       color: $primaryColor;
-      font-size: 0.9rem;
     }
   }
 }
