@@ -1,13 +1,18 @@
 @use '../abstracts/' as *;
 
 .projects {
-  padding: 10rem 0;
-  font-family: $secondaryFont;
-  min-height: 90vh;
+  padding: 5rem 0;
+  font-family: $primaryFont;
 
   & h2 {
     color: $primaryColor;
     text-align: center;
     font-weight: bold;
+  }
+
+  @include devices(laptop) {
+    & h2 {
+      margin-bottom: 1.5rem;
+    }
   }
 }

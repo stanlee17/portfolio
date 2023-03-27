@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import background from '../assets/background.mp4';
 import { TypeAnimation } from 'react-type-animation';
 
@@ -8,19 +8,19 @@ import Contact from '../components/sections/Contact';
 
 const Home = () => {
   return (
-    <Fragment>
+    <div>
       <div className="home">
         <div className="home-overlay"></div>
         <video className="home-bg" src={background} autoPlay loop muted />
         <div className="home-hero">
           <TypeAnimation
             sequence={["Hi, I'm Yves", 1000]}
-            style={{ fontSize: '3rem', color: '#ffffff' }}
+            className="home-hero-heading"
             speed={{ type: 'keyStrokeDelayInMs', value: 100 }}
           />
           <TypeAnimation
             sequence={['Front End Developer', 1000]}
-            style={{ fontSize: '1.6rem', color: '#ff7c7c' }}
+            className="home-hero-sub"
             speed={{ type: 'keyStrokeDelayInMs', value: 100 }}
             repeat={Infinity}
           />
@@ -29,7 +29,7 @@ const Home = () => {
       <About />
       <Projects />
       <Contact />
-    </Fragment>
+    </div>
   );
 };
 

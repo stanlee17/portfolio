@@ -17,15 +17,19 @@
 @use './base/base';
 
 // component imports
-@use './components/about';
 @use './components/buttonlink';
-@use './components/contact';
 @use './components/featured';
-@use './components/home';
-@use './components/notfound';
-@use './components/projects';
 @use './components/spinner';
 
 // layout imports
 @use './layout/footer';
 @use './layout/header';
+
+// page imports
+@use './pages/home';
+@use './pages/notfound';
+
+// section imports
+@use './sections/about';
+@use './sections/contact';
+@use './sections/projects';

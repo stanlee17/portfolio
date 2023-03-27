@@ -13,13 +13,7 @@ const Projects = () => {
         veritatis architecto aperiam quisquam placeat? Animi, accusamus suscipit
         mollitia corporis dignissimos quisquam!"
         image={MMOList}
-        techStack={[
-          'React.js',
-          'Firebase',
-          'Express.js',
-          'Node.js',
-          'Styled Components',
-        ]}
+        techStack={['React.js', 'Firebase', 'Express.js', 'Node.js']}
         githubUrl="https://github.com/stanlee17/mmolist"
         liveUrl="#"
         end

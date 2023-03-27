@@ -8,7 +8,7 @@ const Contact = () => {
       <div className="contact">
         <h2>Get In Touch</h2>
         <p>
-          I am currently looking for job opportunities so my inbox is always
+          I am currently looking for new opportunities so my inbox is always
           open. You could also give me a message on LinkedIn. Feel free to
           contact me and I will try to respond to you as soon as possible! Here
           is my email: <span>stanz.ferigh@gmail.com</span>
@@ -19,9 +19,7 @@ const Contact = () => {
         <ButtonLink url="#" className="me-4">
           Email
         </ButtonLink>
-        <ButtonLink url="#" className="me-4">
-          GitHub
-        </ButtonLink>
+        <ButtonLink url="#">GitHub</ButtonLink>
       </div>
     </Container>
   );

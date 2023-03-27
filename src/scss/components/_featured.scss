@@ -1,14 +1,14 @@
 @use '../abstracts/' as *;
 
 .featured {
-  padding: 5rem 0;
+  padding: 4rem 0;
 
   &-wrapper {
     display: flex;
   }
 
   &-image {
-    min-width: 500px;
+    max-width: 550px;
     border-radius: 5px;
     object-fit: cover;
   }
@@ -51,6 +51,49 @@
     & div:hover {
       cursor: default;
       color: $primaryColor;
+    }
+  }
+
+  @include devices(laptop) {
+    padding: 1rem 0;
+
+    &-wrapper {
+      flex-direction: column;
+    }
+
+    &-image {
+      margin: 0 !important;
+      max-width: 100%;
+    }
+
+    &-content {
+      margin: 2rem 0 !important;
+
+      & h5 {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  @include devices(tablet) {
+    &-tech-stack {
+      font-size: 0.9rem;
+    }
+  }
+
+  @include devices(mobile) {
+    &-content {
+      text-align: center !important;
+    }
+
+    &-desc {
+      & p {
+        font-size: 0.9rem;
+      }
+    }
+
+    &-tech-stack {
+      justify-content: center !important;
     }
   }
 }

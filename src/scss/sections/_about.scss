@@ -3,7 +3,7 @@
 .about {
   padding: 15rem 0 10rem 0;
   display: flex;
-  font-family: $secondaryFont;
+  font-family: $primaryFont;
   flex-direction: column;
 
   &-me {
@@ -18,7 +18,7 @@
     }
 
     & p {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
   }
 
@@ -36,6 +36,22 @@
       display: inline-block;
       border: 1px solid $primaryColor;
       color: $primaryColor;
+    }
+  }
+
+  @include devices(tablet) {
+    padding: 8rem 0 5rem 0;
+
+    &-me {
+      & p {
+        font-size: 1rem;
+      }
+    }
+
+    &-skills {
+      & .tech-name {
+        font-size: 0.9rem;
+      }
     }
   }
 }

@@ -1,0 +1,20 @@
+// ---------MEDIA QUERIES---------
+@mixin devices($breakpoint) {
+  @if $breakpoint == laptop {
+    @media only screen and (max-width: 1200px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: 600px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == mobile {
+    @media only screen and (max-width: 500px) {
+      @content;
+    }
+  }
+}

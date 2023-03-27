@@ -29,16 +29,28 @@
     flex-direction: column;
     text-align: center;
     justify-content: center;
-
     color: white;
 
-    & h1 {
+    &-heading {
       font-size: 3rem;
+      color: $white;
     }
 
-    & h4 {
+    &-sub {
       font-size: 1.6rem;
       color: $primaryColor;
+    }
+  }
+
+  @include devices(tablet) {
+    &-hero {
+      &-heading {
+        font-size: 2.6rem;
+      }
+
+      &-sub {
+        font-size: 1.2rem;
+      }
     }
   }
 }
