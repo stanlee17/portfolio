@@ -1,7 +1,7 @@
 @use '../abstracts/' as *;
 
 .about {
-  padding: 15rem 0 10rem 0;
+  padding: 10rem 0;
   display: flex;
   font-family: $primaryFont;
   flex-direction: column;
@@ -10,48 +10,33 @@
     max-width: 1000px;
     margin: auto;
     text-align: center;
+    line-height: 2;
 
     & h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
       color: $primaryColor;
-      padding-bottom: 1rem;
       font-weight: bold;
     }
 
     & p {
       font-size: 1.1rem;
     }
+
+    & span {
+      color: $primaryColor;
+      font-weight: bold;
+    }
   }
 
   &-skills {
-    max-width: 800px;
+    display: inline-block;
     margin: 0 auto;
+    padding: 2rem 0;
     text-align: center;
-
-    & .tech-name {
-      cursor: default;
-      padding: 0.2rem 1.5rem;
-      margin-top: 0.8rem;
-      margin-right: 1rem;
-      border-radius: 10rem;
-      display: inline-block;
-      border: 1px solid $primaryColor;
-      color: $primaryColor;
-    }
   }
 
   @include devices(tablet) {
     padding: 8rem 0 5rem 0;
-
-    &-me {
-      & p {
-        font-size: 1rem;
-      }
-    }
-
-    &-skills {
-      & .tech-name {
-        font-size: 0.9rem;
-      }
-    }
   }
 }

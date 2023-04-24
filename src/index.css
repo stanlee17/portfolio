@@ -123,6 +123,27 @@ a {
   width: 150px;
 }
 
+.technology {
+  background-color: #212121;
+  display: inline-block;
+  margin: 0 1rem 1rem 1rem;
+  border-radius: 5px;
+}
+.technology-wrapper {
+  display: flex;
+  margin: 0.7rem 1.4rem;
+  align-items: center;
+}
+.technology-image {
+  width: 30px;
+  height: 30px;
+  margin-right: 0.8rem;
+}
+.technology-name {
+  font-weight: bold;
+  margin: 0;
+}
+
 footer {
   text-align: center;
   background: #212121;
@@ -222,7 +243,7 @@ footer {
 }
 
 .about {
-  padding: 15rem 0 10rem 0;
+  padding: 10rem 0;
   display: flex;
   font-family: "Tajawal", sans-serif;
   flex-direction: column;
@@ -231,39 +252,30 @@ footer {
   max-width: 1000px;
   margin: auto;
   text-align: center;
+  line-height: 2;
 }
 .about-me h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
   color: #ff7c7c;
-  padding-bottom: 1rem;
   font-weight: bold;
 }
 .about-me p {
   font-size: 1.1rem;
 }
-.about-skills {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-.about-skills .tech-name {
-  cursor: default;
-  padding: 0.2rem 1.5rem;
-  margin-top: 0.8rem;
-  margin-right: 1rem;
-  border-radius: 10rem;
-  display: inline-block;
-  border: 1px solid #ff7c7c;
+.about-me span {
   color: #ff7c7c;
+  font-weight: bold;
+}
+.about-skills {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 2rem 0;
+  text-align: center;
 }
 @media only screen and (max-width: 600px) {
   .about {
     padding: 8rem 0 5rem 0;
-  }
-  .about-me p {
-    font-size: 1rem;
-  }
-  .about-skills .tech-name {
-    font-size: 0.9rem;
   }
 }
 

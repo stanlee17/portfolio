@@ -19,7 +19,9 @@ const Contact = () => {
         <ButtonLink url="#" className="me-4">
           Email
         </ButtonLink>
-        <ButtonLink url="#">GitHub</ButtonLink>
+        <ButtonLink target="_blank" url="https://github.com/stanlee17">
+          GitHub
+        </ButtonLink>
       </div>
     </Container>
   );
