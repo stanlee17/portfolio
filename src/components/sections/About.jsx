@@ -31,9 +31,9 @@ const About = () => {
           <p className={styles.paragraph}>
             Hello, My name is <span>Yves</span> but you can also call me{' '}
             <span>Stan</span> if you prefer. I am a web developer who is
-            specialises in <span>front end development</span> as I am more
-            design oriented. Seeing that I am able to create a design and make
-            that a reality to the internet fascinates me. I’m always willing to
+            specialises in <span>front end development</span>. Seeing that I am
+            able to create a design and make that a reality to the internet
+            fascinates me. I’m always willing to
             <span> learn new technologies</span> and use them to build more
             projects. Aside from that, I also enjoy fitness, watching anime and
             playing video games in my spare time. Here are some of the

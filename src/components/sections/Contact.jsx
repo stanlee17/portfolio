@@ -16,7 +16,11 @@ const Contact = () => {
           contact me and I will try to respond to you as soon as possible! Here
           is my email: <span>stanz.ferigh@gmail.com</span>
         </p>
-        <ButtonLink url="#" className="me-4">
+        <ButtonLink
+          target="_blank"
+          url="https://www.linkedin.com/in/yves-koesumo-587361169/"
+          className="me-4"
+        >
           LinkedIn
         </ButtonLink>
         <ButtonLink url="#" className="me-4">
