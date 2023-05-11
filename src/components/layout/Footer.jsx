@@ -1,6 +1,9 @@
 // Import React modules
 import React from 'react';
 
+// Import styles
+import styles from './Footer.module.scss';
+
 const Footer = () => {
   // Dynamic Date Function
   const getCurrentYear = () => {
@@ -8,7 +11,9 @@ const Footer = () => {
   };
 
   return (
-    <footer className="py-3">&copy; {getCurrentYear()} Yves Koesumo</footer>
+    <footer className={styles.footer}>
+      &copy; {getCurrentYear()} Yves Koesumo
+    </footer>
   );
 };
 

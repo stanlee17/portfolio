@@ -1,11 +1,14 @@
 import React from 'react';
 
+// Import styles
+import styles from './Technology.module.scss';
+
 const Technology = ({ image, children, alt }) => {
   return (
-    <div className="technology">
-      <div className="technology-wrapper">
-        <img src={image} alt={alt} className="technology-image" />
-        <p className="technology-name">{children}</p>
+    <div className={styles.technology}>
+      <div className={styles.wrapper}>
+        <img src={image} alt={alt} className={styles.image} />
+        <p className={styles.name}>{children}</p>
       </div>
     </div>
   );

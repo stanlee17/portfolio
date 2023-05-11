@@ -1,17 +1,18 @@
-@use '../abstracts/' as *;
+@use '../../styles/scss/abstracts/' as *;
 
 .projects {
   padding: 5rem 0;
   font-family: $primaryFont;
 
-  & h2 {
+  & .heading {
     color: $primaryColor;
     text-align: center;
+    font-size: 2.5rem;
     font-weight: bold;
   }
 
   @include devices(laptop) {
-    & h2 {
+    & .heading {
       margin-bottom: 1.5rem;
     }
   }

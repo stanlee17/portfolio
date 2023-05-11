@@ -1,11 +1,18 @@
 import React from 'react';
+
+// Import common components
 import Featured from '../common/Featured';
+
+// Import assets
 import MMOList from '../../assets/mmolist.png';
+
+// Import styles
+import styles from './Projects.module.scss';
 
 const Projects = () => {
   return (
-    <div className="projects">
-      <h2>Some Things That I've Built</h2>
+    <div className={styles.projects}>
+      <h2 className={styles.heading}>Featured Projects</h2>
       <Featured
         title="MMOList"
         description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
@@ -16,7 +23,6 @@ const Projects = () => {
         techStack={['React.js', 'Firebase', 'Express.js', 'Node.js']}
         githubUrl="https://github.com/stanlee17/mmolist"
         liveUrl="#"
-        end
       />
       <Featured
         title="Colorwind"

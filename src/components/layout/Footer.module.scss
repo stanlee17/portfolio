@@ -1,0 +1,8 @@
+@use '../../styles/scss/abstracts/' as *;
+
+.footer {
+  padding: 2rem 0;
+  text-align: center;
+  background: $darkColor;
+  color: $white;
+}

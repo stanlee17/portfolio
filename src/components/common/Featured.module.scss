@@ -1,54 +1,55 @@
-@use '../abstracts/' as *;
+@use '../../styles/scss/abstracts/' as *;
 
 .featured {
-  padding: 4rem 0;
+  padding: 5rem 0;
 
-  &-wrapper {
+  & .wrapper {
     display: flex;
   }
 
-  &-image {
+  & .image {
     max-width: 550px;
     border-radius: 5px;
     object-fit: cover;
+    margin-right: 2.5rem;
   }
 
-  &-content {
-    & h5 {
+  & .content {
+    & .subtitle {
       font-size: 1.1rem;
       color: $primaryColor;
     }
 
-    & h3 {
+    & .title {
       margin-bottom: 0.8rem;
       font-weight: bold;
     }
   }
 
-  &-desc {
+  & .descOverlay {
     background-color: $darkColor;
     border-radius: 5px;
     padding: 2rem;
 
-    & p {
+    & .desc {
       margin: 0;
     }
   }
 
-  &-tech-stack {
+  & .techStack {
     display: flex;
     margin-top: 0.8rem;
     margin-bottom: 1.5rem;
 
-    & div {
+    & .tech {
       transition: all 0.5s;
     }
 
-    & div:not(:last-child) {
+    & .tech:not(:last-child) {
       margin-right: 1.5rem;
     }
 
-    & div:hover {
+    & .tech:hover {
       cursor: default;
       color: $primaryColor;
     }
@@ -57,42 +58,42 @@
   @include devices(laptop) {
     padding: 1rem 0;
 
-    &-wrapper {
+    & .wrapper {
       flex-direction: column;
     }
 
-    &-image {
+    & .image {
       margin: 0 !important;
       max-width: 100%;
     }
 
-    &-content {
+    & .content {
       margin: 2rem 0 !important;
 
-      & h5 {
+      & .subtitle {
         font-size: 1rem;
       }
     }
   }
 
   @include devices(tablet) {
-    &-tech-stack {
+    & .techStack {
       font-size: 0.9rem;
     }
   }
 
   @include devices(mobile) {
-    &-content {
+    & .content {
       text-align: center !important;
     }
 
-    &-desc {
-      & p {
+    & .descOverlay {
+      & .desc {
         font-size: 0.9rem;
       }
     }
 
-    &-tech-stack {
+    & .techStack {
       justify-content: center !important;
     }
   }

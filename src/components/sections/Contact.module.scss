@@ -1,4 +1,4 @@
-@use '../abstracts/' as *;
+@use '../../styles/scss/abstracts/' as *;
 
 .contact {
   font-family: $primaryFont;
@@ -7,13 +7,13 @@
   padding: 5rem 0 20rem 0;
   margin: auto;
 
-  & h2 {
+  & .heading {
     color: $primaryColor;
     font-weight: bold;
     margin-bottom: 1.5rem;
   }
 
-  & p {
+  & .paragraph {
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
 

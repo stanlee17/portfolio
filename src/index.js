@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 // Global Stylesheet Imports
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './scss/main.scss';
+import './styles/scss/main.scss';
 
 // Import root component
 import App from './App';

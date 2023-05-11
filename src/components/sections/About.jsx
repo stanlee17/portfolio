@@ -1,8 +1,11 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 
-// Import components
+// Import common components
 import Technology from '../common/Technology';
+
+// Import styles
+import styles from './About.module.scss';
 
 // Import tech logos
 import HTML from '../../assets/svg/html5.svg';
@@ -22,13 +25,13 @@ import MongoDB from '../../assets/svg/mongodb.svg';
 const About = () => {
   return (
     <Container>
-      <div className="about">
-        <div className="about-me">
-          <h2>About Me</h2>
-          <p>
+      <div className={styles.about}>
+        <div className={styles.aboutMe}>
+          <h2 className={styles.heading}>About Me</h2>
+          <p className={styles.paragraph}>
             Hello, My name is <span>Yves</span> but you can also call me{' '}
-            <span>Stan</span> if you prefer.
-            <span> Front end development is my specialty</span> as I am more
+            <span>Stan</span> if you prefer. I am a web developer who is
+            specialises in <span>front end development</span> as I am more
             design oriented. Seeing that I am able to create a design and make
             that a reality to the internet fascinates me. I’m always willing to
             <span> learn new technologies</span> and use them to build more
@@ -36,7 +39,7 @@ const About = () => {
             playing video games in my spare time. Here are some of the
             technologies that I've been working with.
           </p>
-          <div className="about-skills">
+          <div className={styles.skills}>
             <Technology image={HTML} alt="html5">
               HTML
             </Technology>
@@ -53,7 +56,7 @@ const About = () => {
               Javascript
             </Technology>
             <Technology image={Reactjs} alt="reactjs">
-              Reactjs
+              React
             </Technology>
             <Technology image={Next} alt="Next">
               Next

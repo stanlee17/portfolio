@@ -1,4 +1,4 @@
-@use '../abstracts/' as *;
+@use '../../styles/scss/abstracts/' as *;
 
 .navbar {
   position: fixed;
@@ -6,8 +6,8 @@
   background-color: transparent;
   color: $white;
 
-  .navbar-brand,
-  .nav-link {
+  & .navbarBrand,
+  & .navLink {
     color: $white;
 
     &:hover {

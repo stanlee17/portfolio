@@ -24,8 +24,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "watch:sass": "sass --no-source-map --watch src/scss/main.scss:src/index.css",
-    "build:sass": "sass --no-source-map src/scss/main.scss:src/index.css"
+    "watch:sass": "sass --no-source-map --watch src/styles/scss/main.scss:src/styles/globals.css",
+    "build:scss": "sass --no-source-map src/styles/scss/main.scss:src/styles/globals.css"
   },
   "eslintConfig": {
     "extends": [

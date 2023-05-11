@@ -2,6 +2,9 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import ButtonLink from './ButtonLink';
 
+// Import styles
+import styles from './Featured.module.scss';
+
 const Featured = ({
   title,
   description,
@@ -9,40 +12,29 @@ const Featured = ({
   techStack,
   githubUrl,
   liveUrl,
-  end,
 }) => {
   return (
-    <div className="featured">
+    <div className={styles.featured}>
       <Container>
-        <div className="featured-wrapper">
-          {end ? (
-            <img className="featured-image me-5" src={image} alt={title} />
-          ) : (
-            ''
-          )}
-          <div className={`featured-content ${end ? 'text-end' : ''}`}>
-            <h5>Featured Project</h5>
-            <h3>{title}</h3>
-            <div className="featured-desc">
-              <p>{description}</p>
+        <div className={styles.wrapper}>
+          <img className={styles.image} src={image} alt={title} />
+          <div className={styles.content}>
+            <h5 className={styles.subtitle}>Featured Project</h5>
+            <h3 className={styles.title}>{title}</h3>
+            <div className={styles.descOverlay}>
+              <p className={styles.desc}>{description}</p>
             </div>
-            <div
-              className={`featured-tech-stack ${
-                end ? 'justify-content-end' : ''
-              }`}
-            >
-              {techStack && techStack.map((tech) => <div>{tech}</div>)}
+            <div className={styles.techStack}>
+              {techStack &&
+                techStack.map((tech) => (
+                  <div className={styles.tech}>{tech}</div>
+                ))}
             </div>
             <ButtonLink url={githubUrl} className="me-4">
               View Code
             </ButtonLink>
             <ButtonLink url={liveUrl}>Website</ButtonLink>
           </div>
-          {!end ? (
-            <img className="featured-image ms-5" src={image} alt={title} />
-          ) : (
-            ''
-          )}
         </div>
       </Container>
     </div>
