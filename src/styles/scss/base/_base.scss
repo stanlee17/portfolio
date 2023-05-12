@@ -1,7 +1,7 @@
 @use '../abstracts/' as *;
 
 body {
-  font-family: $secondaryFont;
+  font-family: $primaryFont;
   background: $darkBgColor;
   box-sizing: border-box;
   color: $white;

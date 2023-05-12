@@ -5,7 +5,9 @@ import { Container } from 'react-bootstrap';
 import Project from '../common/Project';
 
 // Import assets
-import MMOList from '../../assets/mmolist.png';
+import MMOList from '../../assets/projects/mmolist.png';
+import Colorwind from '../../assets/projects/colorwind.png';
+import PayAPI from '../../assets/projects/payapi.png';
 
 // Import styles
 import styles from './Projects.module.scss';
@@ -17,6 +19,18 @@ const Projects = () => {
         <h2 className={styles.heading}>Top Projects</h2>
         <Project
           subtitle="Project One"
+          title="Colorwind"
+          description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
+        ipsum nesciunt iure, nulla recusandae tenetur, nemo possimus esse
+        veritatis architecto aperiam quisquam placeat? Animi, accusamus suscipit
+        mollitia corporis dignissimos quisquam!"
+          image={Colorwind}
+          techStack={['React.js', 'Sass', 'Colormind API']}
+          githubUrl="https://github.com/stanlee17/colorwind"
+          liveUrl="#"
+        />
+        <Project
+          subtitle="Project Two"
           title="MMOList"
           description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
         ipsum nesciunt iure, nulla recusandae tenetur, nemo possimus esse
@@ -28,15 +42,15 @@ const Projects = () => {
           liveUrl="#"
         />
         <Project
-          subtitle="Project Two"
-          title="Colorwind"
+          subtitle="Project Three"
+          title="PayAPI"
           description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
         ipsum nesciunt iure, nulla recusandae tenetur, nemo possimus esse
         veritatis architecto aperiam quisquam placeat? Animi, accusamus suscipit
         mollitia corporis dignissimos quisquam!"
-          image={MMOList}
-          techStack={['React.js', 'Sass', 'Colormind API']}
-          githubUrl="https://github.com/stanlee17/colorwind"
+          image={PayAPI}
+          techStack={['React.js', 'Tailwind CSS']}
+          githubUrl="https://github.com/stanlee17/payapi"
           liveUrl="#"
         />
       </Container>

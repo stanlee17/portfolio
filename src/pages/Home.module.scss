@@ -1,11 +1,12 @@
-@use '../abstracts/' as *;
+@use '../styles/scss/abstracts/' as *;
 
 .home {
   position: relative;
   width: 100%;
   height: 100vh;
+  font-family: $secondaryFont;
 
-  &-overlay {
+  & .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -14,13 +15,13 @@
     background-color: #181818cb;
   }
 
-  &-bg {
+  & .bg {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 
-  &-hero {
+  & .hero {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -30,27 +31,27 @@
     text-align: center;
     justify-content: center;
     color: white;
+  }
 
-    &-heading {
-      font-size: 3.2rem;
-      color: $white;
-    }
+  & .heroHeading {
+    font-size: 3.2rem;
+    color: $white;
+  }
 
-    &-sub {
-      font-size: 1.6rem;
-      color: $primaryColor;
-    }
+  & .heroSub {
+    font-size: 1.6rem;
+    color: $primaryColor;
   }
 
   @include devices(tablet) {
-    &-hero {
-      &-heading {
-        font-size: 2.6rem;
-      }
+    & .heroHeading {
+      font-size: 2.6rem;
+      color: $white;
+    }
 
-      &-sub {
-        font-size: 1.2rem;
-      }
+    & .heroSub {
+      font-size: 1.2rem;
+      color: $primaryColor;
     }
   }
 }

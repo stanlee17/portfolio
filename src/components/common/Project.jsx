@@ -32,7 +32,7 @@ const Featured = ({
           <ButtonLink url={githubUrl} className="me-4">
             View Code
           </ButtonLink>
-          <ButtonLink url={liveUrl}>Website</ButtonLink>
+          <ButtonLink url={liveUrl}>View Website</ButtonLink>
         </div>
       </div>
     </div>
