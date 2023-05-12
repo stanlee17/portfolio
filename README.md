@@ -13,6 +13,6 @@
 ## Setup
 
 1. Clone this project
-2. `npm i`
+2. `npm i` to install dependencies & node_modules
 3. `npm start` to start the application
-4. `npm run watch:sass` on the other terminal in order to run sass
+4. `npm run watch:sass` on the other terminal to run sass
