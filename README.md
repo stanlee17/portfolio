@@ -1,6 +1,6 @@
 # Personal Portfolio - v1
 
-> My first iteration of personal portfolio website for projects & skills showcase purposes
+> First iteration of my personal portfolio website for projects & skills showcase purposes
 
 ## Built with:
 
