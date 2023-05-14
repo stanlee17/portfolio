@@ -13,7 +13,7 @@ import styles from './Home.module.scss';
 const Home = () => {
   return (
     <div>
-      <div className={styles.home}>
+      <div id="home" className={styles.home}>
         <div className={styles.overlay}></div>
         <video className={styles.bg} src={background} autoPlay loop muted />
         <div className={styles.hero}>

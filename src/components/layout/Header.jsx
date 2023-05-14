@@ -1,20 +1,20 @@
 // Import React modules
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Hamburger from 'hamburger-react';
+import { scroller } from 'react-scroll';
+import { Container, Nav, Navbar } from 'react-bootstrap';
+
+// Import offcanvas
+import NavOffcanvas from './NavOffcanvas';
 
 // Import Styles
 import styles from './Header.module.scss';
 
-// Import Bootstrap modules
-import { Container, Nav, Navbar, Offcanvas } from 'react-bootstrap';
-
-// Hamburger React
-import Hamburger from 'hamburger-react';
-
 const inlineStyle = {
   navbar: {
     backgroundColor: '#212121',
-    transition: 'all .7s ease-in-out',
+    transition: 'background-color .7s ease-out',
   },
 };
 
@@ -22,7 +22,6 @@ const Header = () => {
   const [bgColor, setBgColor] = useState(false);
   const [show, setShow] = useState(false);
 
-  const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
   const changeColor = () => {
@@ -31,6 +30,15 @@ const Header = () => {
     } else {
       setBgColor(false);
     }
+  };
+
+  const pageScroller = (to, offset) => {
+    scroller.scrollTo(to, {
+      smooth: true,
+      spy: true,
+      offset,
+      duration: 0,
+    });
   };
 
   window.addEventListener('scroll', changeColor);
@@ -47,72 +55,43 @@ const Header = () => {
           Yves
         </Navbar.Brand>
         <Hamburger size={25} toggle={handleShow} />
-        <Offcanvas
+        {/* Offcanvas */}
+        <NavOffcanvas
           show={show}
-          onHide={handleClose}
-          placement="end"
-          className={styles.offcanvas}
-        >
-          <Offcanvas.Header
-            className={`btn-close-white ${styles.offcanvasHeader}`}
-            closeButton
-          >
-            <Offcanvas.Title></Offcanvas.Title>
-          </Offcanvas.Header>
-          <Offcanvas.Body className={styles.offcanvasBody}>
-            <Nav.Link
-              as={Link}
-              to="/"
-              onClick={handleClose}
-              className={styles.offcanvasLink}
-            >
-              Home
-            </Nav.Link>
-            <Nav.Link
-              as={Link}
-              to="#"
-              onClick={handleClose}
-              className={styles.offcanvasLink}
-            >
-              About
-            </Nav.Link>
-            <Nav.Link
-              as={Link}
-              to="#"
-              onClick={handleClose}
-              className={styles.offcanvasLink}
-            >
-              Projects
-            </Nav.Link>
-            <Nav.Link
-              as={Link}
-              to="#"
-              onClick={handleClose}
-              className={styles.offcanvasLink}
-            >
-              Contact
-            </Nav.Link>
-          </Offcanvas.Body>
-        </Offcanvas>
+          setShow={setShow}
+          pageScroller={pageScroller}
+        />
 
         <Nav className={`ms-end ${styles.navbarNav}`}>
-          <Nav.Link as={Link} to="/" className={`me-4 ${styles.navLink}`}>
+          <Nav.Link
+            as={Link}
+            to="/"
+            className={`me-4 ${styles.navLink}`}
+            onClick={() => pageScroller('home', -70)}
+          >
             Home
           </Nav.Link>
-          <Nav.Link as={Link} to="/#about" className={`me-4 ${styles.navLink}`}>
+          <Nav.Link
+            as={Link}
+            to="#about"
+            className={`me-4 ${styles.navLink}`}
+            onClick={() => pageScroller('about', -70)}
+          >
             About
           </Nav.Link>
           <Nav.Link
             as={Link}
-            to="/#projects"
+            to="#projects"
             className={`me-4 ${styles.navLink}`}
+            onClick={() => pageScroller('projects', -70)}
           >
             Projects
           </Nav.Link>
           <Nav.Link
             as={Link}
-            to="/#contact"
+            to="#contact"
             className={`me-4 ${styles.navLink}`}
+            onClick={() => pageScroller('contact', -70)}
           >
             Contact
           </Nav.Link>

@@ -8,7 +8,7 @@ import styles from './Contact.module.scss';
 const Contact = () => {
   return (
     <Container>
-      <div className={styles.contact}>
+      <div id="contact" className={styles.contact}>
         <h2 className={styles.heading}>Get In Touch</h2>
         <p className={styles.paragraph}>
           I am currently looking for new opportunities so my inbox is always

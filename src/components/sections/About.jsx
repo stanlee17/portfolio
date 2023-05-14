@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
+// import { motion } from 'framer-motion';
 
 // Import common components
 import Technology from '../common/Technology';
@@ -25,7 +26,7 @@ import MongoDB from '../../assets/svg/mongodb.svg';
 const About = () => {
   return (
     <Container>
-      <div className={styles.about}>
+      <div id="about" className={styles.about}>
         <div className={styles.aboutMe}>
           <h2 className={styles.heading}>About Me</h2>
           <p className={styles.paragraph}>
