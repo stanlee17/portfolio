@@ -6,12 +6,44 @@
   background-color: transparent;
   color: $white;
 
+  & .navbarBrand {
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+
   & .navbarBrand,
   & .navLink {
     color: $white;
+  }
 
-    &:hover {
-      color: $primaryColor;
+  & .navLink {
+    transition: all 0.4s;
+  }
+
+  & .navLink:hover {
+    color: $primaryColor;
+  }
+
+  @include devices(laptop) {
+    .navbarNav {
+      display: none;
     }
+  }
+}
+
+// Offcanvas
+.offcanvas {
+  background-color: $darkColor;
+  padding: 1.5rem;
+
+  &Link {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 1.3rem 0;
+    transition: all 0.4s;
+  }
+
+  &Link:hover {
+    color: $primaryColor;
   }
 }

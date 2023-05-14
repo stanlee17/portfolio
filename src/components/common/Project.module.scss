@@ -9,12 +9,13 @@
 
   & .imageWrapper {
     margin-right: 2.5rem;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
 
     & .window {
       display: flex;
       align-items: center;
       max-width: 550px;
-      min-height: 30px;
+      min-height: 35px;
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
       background-color: $darkColor;
@@ -51,6 +52,7 @@
 
   & .descOverlay {
     background-color: $darkColor;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
     border-radius: 5px;
     padding: 2rem;
 

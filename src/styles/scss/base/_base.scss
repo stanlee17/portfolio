@@ -22,3 +22,11 @@ body {
 a {
   text-decoration: none;
 }
+
+.hamburger-react {
+  display: none;
+
+  @include devices(laptop) {
+    display: block;
+  }
+}

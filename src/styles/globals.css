@@ -22,6 +22,15 @@ a {
   text-decoration: none;
 }
 
+.hamburger-react {
+  display: none;
+}
+@media only screen and (max-width: 1200px) {
+  .hamburger-react {
+    display: block;
+  }
+}
+
 .notFoundWrapper {
   margin: 5rem 0;
   text-align: center;
