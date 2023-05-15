@@ -5,6 +5,7 @@
 
   & .wrapper {
     display: flex;
+    align-items: center;
   }
 
   & .imageWrapper {
@@ -54,6 +55,7 @@
     background-color: $darkColor;
     border-radius: 5px;
     padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
 
     & p {
       margin: 0;
@@ -87,7 +89,7 @@
     }
 
     & .imageWrapper {
-      margin: 0 !important;
+      margin: 0;
 
       & .window,
       .image {
@@ -96,7 +98,7 @@
     }
 
     & .content {
-      margin: 2rem 0 !important;
+      margin: 2rem 0;
 
       & .subtitle {
         font-size: 1rem;
@@ -113,12 +115,12 @@
   @include devices(mobile) {
     & .imageWrapper {
       & .image {
-        min-height: 250px;
+        min-height: 200px;
       }
     }
 
     & .content {
-      text-align: center !important;
+      text-align: center;
     }
 
     & .descOverlay {
@@ -128,7 +130,7 @@
     }
 
     & .techStack {
-      justify-content: center !important;
+      justify-content: center;
     }
   }
 }

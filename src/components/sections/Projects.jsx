@@ -7,6 +7,7 @@ import Project from '../common/Project';
 // Import assets
 import MMOList from '../../assets/projects/mmolist.png';
 import Colorwind from '../../assets/projects/colorwind.png';
+import v1 from '../../assets/projects/portfolio_v1.png';
 import PayAPI from '../../assets/projects/payapi.png';
 
 // Import styles
@@ -25,7 +26,7 @@ const Projects = () => {
         veritatis architecto aperiam quisquam placeat? Animi, accusamus suscipit
         mollitia corporis dignissimos quisquam!"
           image={Colorwind}
-          techStack={['React.js', 'Sass', 'Colormind API']}
+          techStack={['React.js', 'Sass', 'Colormind API', 'React Context']}
           githubUrl="https://github.com/stanlee17/colorwind"
           liveUrl="#"
         />
@@ -50,6 +51,18 @@ const Projects = () => {
         mollitia corporis dignissimos quisquam!"
           image={PayAPI}
           techStack={['React.js', 'Tailwind CSS']}
+          githubUrl="https://github.com/stanlee17/payapi"
+          liveUrl="#"
+        />
+        <Project
+          subtitle="Project Four"
+          title="Portfolio v1"
+          description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
+        ipsum nesciunt iure, nulla recusandae tenetur, nemo possimus esse
+        veritatis architecto aperiam quisquam placeat? Animi, accusamus suscipit
+        mollitia corporis dignissimos quisquam!"
+          image={v1}
+          techStack={['React.js', 'Sass', 'React Bootstrap', 'Framer Motion']}
           githubUrl="https://github.com/stanlee17/payapi"
           liveUrl="#"
         />
