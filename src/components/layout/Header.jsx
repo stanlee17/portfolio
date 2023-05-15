@@ -51,7 +51,12 @@ const Header = () => {
       style={bgColor ? inlineStyle.navbar : {}}
     >
       <Container>
-        <Navbar.Brand as={Link} to="/" className={styles.navbarBrand}>
+        <Navbar.Brand
+          as={Link}
+          to="/"
+          className={styles.navbarBrand}
+          onClick={() => pageScroller('home', -70)}
+        >
           Yves
         </Navbar.Brand>
         <Hamburger size={25} toggle={handleShow} />

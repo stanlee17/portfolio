@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ButtonLink from '../common/ButtonLink';
 import { Container } from 'react-bootstrap';
 
@@ -14,7 +15,10 @@ const Contact = () => {
           I am currently looking for new opportunities so my inbox is always
           open. You could also give me a message on LinkedIn. Feel free to
           contact me and I will try to respond to you as soon as possible! Here
-          is my email: <span>stanz.ferigh@gmail.com</span>
+          is my email:{' '}
+          <Link to="mailto:stanz.ferigh@gmail.com" className={styles.link}>
+            stanz.ferigh@gmail.com
+          </Link>
         </p>
         <ButtonLink
           target="_blank"
@@ -23,7 +27,7 @@ const Contact = () => {
         >
           LinkedIn
         </ButtonLink>
-        <ButtonLink url="#" className="me-4">
+        <ButtonLink url="mailto:stanz.ferigh@gmail.com" className="me-4">
           Email
         </ButtonLink>
         <ButtonLink target="_blank" url="https://github.com/stanlee17">

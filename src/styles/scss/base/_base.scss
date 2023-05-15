@@ -23,6 +23,23 @@ a {
   text-decoration: none;
 }
 
+// Scrollbar Styles
+/* width */
+::-webkit-scrollbar {
+  max-width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $darkColor;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $primaryColor;
+  border-radius: 10rem;
+}
+
 .hamburger-react {
   display: none;
 
