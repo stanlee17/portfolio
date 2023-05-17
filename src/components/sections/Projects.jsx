@@ -21,50 +21,38 @@ const Projects = () => {
         <Project
           subtitle="Project One"
           title="Colorwind"
-          description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
-        ipsum nesciunt iure, nulla recusandae tenetur, nemo possimus esse
-        veritatis architecto aperiam quisquam placeat? Animi, accusamus suscipit
-        mollitia corporis dignissimos quisquam!"
+          description="A color generator app powered by Colormind API, designed for users to find matching color palettes for their needs. This is one of my assessment project that I made during 1st semester of my diploma (added more features after that) and is by far one of the most time consuming but proudest front-end project that I made."
           image={Colorwind}
           techStack={['React.js', 'Sass', 'Colormind API', 'React Context']}
           githubUrl="https://github.com/stanlee17/colorwind"
-          liveUrl="#"
+          liveUrl="http://colorwind.surge.sh/"
         />
         <Project
           subtitle="Project Two"
           title="MMOList"
-          description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
-        ipsum nesciunt iure, nulla recusandae tenetur, nemo possimus esse
-        veritatis architecto aperiam quisquam placeat? Animi, accusamus suscipit
-        mollitia corporis dignissimos quisquam!"
+          description="An MMORPG info app that I made during my 2nd semester of my diploma. This app is designed to allow users to explore a variety of MMORPG games that are either in development, going through beta testing, or available to play. Logged in users are also able to contribute by adding new MMORPG games that are not yet listed."
           image={MMOList}
-          techStack={['React.js', 'Firebase', 'Express.js', 'Node.js']}
+          techStack={['Firebase', 'Express.js', 'React.js', 'Node.js']}
           githubUrl="https://github.com/stanlee17/mmolist"
           liveUrl="#"
         />
         <Project
           subtitle="Project Three"
           title="PayAPI"
-          description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
-        ipsum nesciunt iure, nulla recusandae tenetur, nemo possimus esse
-        veritatis architecto aperiam quisquam placeat? Animi, accusamus suscipit
-        mollitia corporis dignissimos quisquam!"
+          description="A 4-page mock company website that are built for the purpose of getting familiar with the Tailwind CSS framework. The design of this website was listed in one of the advanced challenges on frontendmentor.io. I was especially proud of this project as I was able to replicate from a Figma design to React.js + Tailwind successfully."
           image={PayAPI}
           techStack={['React.js', 'Tailwind CSS']}
           githubUrl="https://github.com/stanlee17/payapi"
-          liveUrl="#"
+          liveUrl="https://payapi-5gi.pages.dev/"
         />
         <Project
           subtitle="Project Four"
           title="Portfolio v1"
-          description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
-        ipsum nesciunt iure, nulla recusandae tenetur, nemo possimus esse
-        veritatis architecto aperiam quisquam placeat? Animi, accusamus suscipit
-        mollitia corporis dignissimos quisquam!"
+          description="First iteration of my portfolio website as you are looking right now, made primarily for projects showcase and other purposes (technical skills, contact info, about me etc)."
           image={v1}
           techStack={['React.js', 'Sass', 'React Bootstrap', 'Framer Motion']}
-          githubUrl="https://github.com/stanlee17/payapi"
-          liveUrl="#"
+          githubUrl="https://github.com/stanlee17/portfolio"
+          liveUrl="https://yveskoesumo.com"
         />
       </Container>
     </div>
