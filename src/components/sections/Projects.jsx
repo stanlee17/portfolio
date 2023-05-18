@@ -5,10 +5,10 @@ import { Container } from 'react-bootstrap';
 import Project from '../common/Project';
 
 // Import assets
-import MMOList from '../../assets/projects/mmolist.png';
-import Colorwind from '../../assets/projects/colorwind.png';
-import v1 from '../../assets/projects/portfolio_v1.png';
-import PayAPI from '../../assets/projects/payapi.png';
+import MMOList from '../../assets/projects/mmolist.webp';
+import Colorwind from '../../assets/projects/colorwind.webp';
+import v1 from '../../assets/projects/portfolio_v1.webp';
+import PayAPI from '../../assets/projects/payapi.webp';
 
 // Import styles
 import styles from './Projects.module.scss';
@@ -21,7 +21,7 @@ const Projects = () => {
         <Project
           subtitle="Project One"
           title="Colorwind"
-          description="A color generator app powered by Colormind API, designed for users to find matching color palettes for their needs. This is one of my assessment project that I made during 1st semester of my diploma (added more features after that) and is by far one of the most time consuming but proudest front-end project that I made."
+          description="A color generator app designed for users to find matching color palettes for their needs. This was one of my assessment project that I made during the 2nd semester of my diploma (added more features after that)"
           image={Colorwind}
           techStack={['React.js', 'Sass', 'Colormind API', 'React Context']}
           githubUrl="https://github.com/stanlee17/colorwind"
@@ -30,7 +30,7 @@ const Projects = () => {
         <Project
           subtitle="Project Two"
           title="MMOList"
-          description="An MMORPG info app that I made during my 2nd semester of my diploma. This app is designed to allow users to explore a variety of MMORPG games that are either in development, going through beta testing, or available to play. Logged in users are also able to contribute by adding new MMORPG games that are not yet listed."
+          description="A full stack MMORPG info application project designed to allow users to explore a variety of MMORPG games that are either in development, going through beta testing, or available to play. This was one of my assessment project that I made during the 1st semester of my diploma."
           image={MMOList}
           techStack={['Firebase', 'Express.js', 'React.js', 'Node.js']}
           githubUrl="https://github.com/stanlee17/mmolist"
@@ -39,7 +39,7 @@ const Projects = () => {
         <Project
           subtitle="Project Three"
           title="PayAPI"
-          description="A 4-page mock company website that are built for the purpose of getting familiar with the Tailwind CSS framework. The design of this website was listed in one of the advanced challenges on frontendmentor.io. I was especially proud of this project as I was able to replicate from a Figma design to React.js + Tailwind successfully."
+          description="A 4-page mock company website that are built for the purpose of getting familiar with the Tailwind CSS framework. The design of this website was provided by frontendmentor.io (one of the advanced challenges section)."
           image={PayAPI}
           techStack={['React.js', 'Tailwind CSS']}
           githubUrl="https://github.com/stanlee17/payapi"
@@ -48,7 +48,7 @@ const Projects = () => {
         <Project
           subtitle="Project Four"
           title="Portfolio v1"
-          description="First iteration of my portfolio website as you are looking right now, made primarily for projects showcase and other purposes (technical skills, contact info, about me etc)."
+          description="First iteration of my portfolio website as you are probably looking right now, made primarily for projects showcase and other purposes (technical skills, contact info, about me etc)."
           image={v1}
           techStack={['React.js', 'Sass', 'React Bootstrap', 'Framer Motion']}
           githubUrl="https://github.com/stanlee17/portfolio"

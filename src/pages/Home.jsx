@@ -1,5 +1,5 @@
 import React from 'react';
-import background from '../assets/background.mp4';
+import background from '../assets/background.webm';
 import { TypeAnimation } from 'react-type-animation';
 
 // Import sections
@@ -15,7 +15,9 @@ const Home = () => {
     <div>
       <div id="home" className={styles.home}>
         <div className={styles.overlay}></div>
-        <video className={styles.bg} src={background} autoPlay loop muted />
+        <video className={styles.bg} autoPlay loop muted>
+          <source src={background} type="video/webm" />
+        </video>
         <div className={styles.hero}>
           <TypeAnimation
             sequence={["Hi, I'm Yves", 1000]}
