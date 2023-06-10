@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 // Import icons
-import { IoLogoGithub, IoLogoLinkedin, IoLogoInstagram } from 'react-icons/io5';
+import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5';
 
 // Import styles
 import styles from './Footer.module.scss';
@@ -31,13 +31,6 @@ const Footer = () => {
           className={styles.link}
         >
           <IoLogoLinkedin size={20} />
-        </Link>
-        <Link
-          target="_blank"
-          to="https://www.instagram.com/stanleekoe/"
-          className={styles.link}
-        >
-          <IoLogoInstagram size={20} />
         </Link>
       </div>
     </footer>

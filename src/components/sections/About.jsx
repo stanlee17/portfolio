@@ -30,15 +30,15 @@ const About = () => {
         <div className={styles.aboutMe}>
           <h2 className={styles.heading}>About Me</h2>
           <p className={styles.paragraph}>
-            Hello, My name is <span>Yves</span> but you can also call me{' '}
-            <span>Stan</span> if you prefer. I am a web developer who is
-            specialises in <span>front end development</span>. Seeing that I am
-            able to create a design and make that a reality to the internet
-            fascinates me. I’m always willing to
-            <span> learn new technologies</span> and use them to build more
-            projects. Aside from that, I also enjoy fitness, watching anime and
-            playing video games in my spare time. Here are some of the
-            technologies that I've been working with.
+            Hello, my name is <span>Yves</span>, but feel free to call me{' '}
+            <span>Stan</span>. I am a web developer with a strong emphasis on
+            <span> front-end development</span>. The process of transforming
+            designs into functional realities on the internet fascinates me. I
+            have an unwavering eagerness to learn new technologies and employ
+            them to create visually appealing, functional, and innovative
+            projects. Besides my passion for web development, I enjoy fitness,
+            watching anime, and playing video games in my spare time. Here are
+            some of the technologies I have experience working with:
           </p>
           <div className={styles.skills}>
             <Technology image={HTML} alt="html5">
