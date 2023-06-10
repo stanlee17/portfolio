@@ -43,7 +43,7 @@ const Projects = () => {
           image={MMOList}
           techStack={['Firebase', 'Express.js', 'React.js', 'Node.js']}
           githubUrl="https://github.com/stanlee17/mmolist"
-          liveUrl="#"
+          liveUrl="https://mmolist.onrender.com"
         />
         <Project
           subtitle="Project Four"
