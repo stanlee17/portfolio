@@ -2,7 +2,7 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 
 // Import common components
-import Project from '../common/Project';
+import Project from '../common/Project/Project';
 
 // Import assets
 import MMOList from '../../assets/projects/mmolist.webp';
@@ -29,21 +29,27 @@ const Projects = () => {
         />
         <Project
           subtitle="Project Two"
-          title="Colorwind"
-          description="A color generator app designed to assist users in finding matching color palettes tailored to their specific requirements. This project was initially developed as part of my assessment during the 2nd semester of my diploma, and I have since added additional features to enhance its functionality."
-          image={Colorwind}
-          techStack={['React.js', 'Sass', 'Colormind API', 'React Context']}
-          githubUrl="https://github.com/stanlee17/colorwind"
-          liveUrl="http://colorwind.surge.sh/"
-        />
-        <Project
-          subtitle="Project Three"
           title="MMOList"
           description="A full-stack MMORPG info application project created to provide users with the ability to explore a wide range of MMORPG games, including those in development, undergoing beta testing, or currently available to play. This project was completed as part of my assessment during the 1st semester of my diploma."
           image={MMOList}
-          techStack={['Firebase', 'Express.js', 'React.js', 'Node.js']}
+          techStack={[
+            'Firebase',
+            'Express.js',
+            'React.js',
+            'Node.js',
+            'Styled Components',
+          ]}
           githubUrl="https://github.com/stanlee17/mmolist"
           liveUrl="https://mmolist.onrender.com"
+        />
+        <Project
+          subtitle="Project Three"
+          title="Colorwind"
+          description="A color generator app designed to assist users in finding matching color palettes tailored to their specific requirements. This project was initially developed as part of my assessment during the 2nd semester of my diploma, and I have since added additional features to enhance its functionality."
+          image={Colorwind}
+          techStack={['React.js', 'Sass', 'React Bootstrap', 'React Context']}
+          githubUrl="https://github.com/stanlee17/colorwind"
+          liveUrl="http://colorwind.xyz/"
         />
         <Project
           subtitle="Project Four"

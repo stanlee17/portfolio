@@ -25,7 +25,7 @@ const Home = () => {
             speed={{ type: 'keyStrokeDelayInMs', value: 100 }}
           />
           <TypeAnimation
-            sequence={['Front End Developer', 1000]}
+            sequence={['Web Developer', 1000]}
             className={styles.heroSub}
             speed={{ type: 'keyStrokeDelayInMs', value: 100 }}
             repeat={Infinity}

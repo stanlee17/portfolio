@@ -1,9 +1,8 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-// import { motion } from 'framer-motion';
 
 // Import common components
-import Technology from '../common/Technology';
+import Technology from '../common/Technology/Technology';
 
 // Import styles
 import styles from './About.module.scss';
@@ -30,15 +29,16 @@ const About = () => {
         <div className={styles.aboutMe}>
           <h2 className={styles.heading}>About Me</h2>
           <p className={styles.paragraph}>
-            Hello, my name is <span>Yves</span>, but feel free to call me{' '}
-            <span>Stan</span>. I am a web developer with a strong emphasis on
-            <span> front-end development</span>. The process of transforming
-            designs into functional realities on the internet fascinates me. I
-            have an unwavering eagerness to learn new technologies and employ
-            them to create visually appealing, functional, and innovative
-            projects. Besides my passion for web development, I enjoy fitness,
-            watching anime, and playing video games in my spare time. Here are
-            some of the technologies I have experience working with:
+            Welcome to my Portfolio site! I'm Yves, a <span>web developer</span>{' '}
+            with a passion for transforming designs into functional realities on
+            the internet. I specialize in creating visually appealing and user
+            responsive projects that provides seamless user experiences. With a
+            keen eye for detail and an eagerness to learn, I stay up to date
+            with the latest technologies to enhance my development skills.
+            Alongside my expertise in web development, I'm also an avid fitness
+            enthusiast and enjoy indulging in anime and video games during my
+            spare time. Here are some of the technologies I have experience
+            with:
           </p>
           <div className={styles.skills}>
             <Technology image={HTML} alt="html5">

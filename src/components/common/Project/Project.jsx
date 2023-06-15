@@ -1,10 +1,10 @@
 import React from 'react';
-import ButtonLink from './ButtonLink';
+import ButtonLink from '../ButtonLink/ButtonLink';
 
 // Import images
-import RedCircle from '../../assets/svg/red_circle.svg';
-import YellowCircle from '../../assets/svg/yellow_circle.svg';
-import GreenCircle from '../../assets/svg/green_circle.svg';
+import RedCircle from '../../../assets/svg/red_circle.svg';
+import YellowCircle from '../../../assets/svg/yellow_circle.svg';
+import GreenCircle from '../../../assets/svg/green_circle.svg';
 
 // Import styles
 import styles from './Project.module.scss';
