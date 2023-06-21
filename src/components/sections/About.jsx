@@ -30,15 +30,13 @@ const About = () => {
           <h2 className={styles.heading}>About Me</h2>
           <p className={styles.paragraph}>
             Welcome to my Portfolio site! I'm Yves, a <span>web developer</span>{' '}
-            with a passion for transforming designs into functional realities on
-            the internet. I specialize in creating visually appealing and user
-            responsive projects that provides seamless user experiences. With a
-            keen eye for detail and an eagerness to learn, I stay up to date
-            with the latest technologies to enhance my development skills.
-            Alongside my expertise in web development, I'm also an avid fitness
-            enthusiast and enjoy indulging in anime and video games during my
-            spare time. Here are some of the technologies I have experience
-            with:
+            who specializes in <span>front-end development</span> as I am more
+            design oriented. Being able to witness my creation and ideas be
+            brought into reality onto the internet really began to captivate me.
+            I am very eager to learn new technologies and utilize them to build
+            more innovative and creative projects. Aside from that, I also enjoy
+            fitness, watching anime and playing video games in my spare time.
+            Here are some of the technologies that I have been working with:
           </p>
           <div className={styles.skills}>
             <Technology image={HTML} alt="html5">

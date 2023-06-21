@@ -21,7 +21,7 @@ const Projects = () => {
         <Project
           subtitle="Project One"
           title="Arima"
-          description="A functional and visually appealing Anime Wiki application built with Next.js, enabling users to discover and explore top-rated, upcoming, and currently airing anime. Additionally, it includes a comprehensive search page feature that allows users to search for any anime available."
+          description="A functional and visually appealing Anime Wiki application built with Next.js, enabling users to discover and explore top-rated, upcoming, and currently airing anime."
           image={Arima}
           techStack={['React.js', 'Next.js', 'React Bootstrap', 'Sass']}
           githubUrl="https://github.com/stanlee17/arima"
@@ -30,7 +30,7 @@ const Projects = () => {
         <Project
           subtitle="Project Two"
           title="MMOList"
-          description="A full-stack MMORPG info application project created to provide users with the ability to explore a wide range of MMORPG games, including those in development, undergoing beta testing, or currently available to play. This project was completed as part of my assessment during the 1st semester of my diploma."
+          description="A full-stack MMORPG info application project created to provide users with the ability to explore a wide range of MMORPG games, including those in development, undergoing beta testing, or currently available to play."
           image={MMOList}
           techStack={[
             'Firebase',
