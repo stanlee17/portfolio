@@ -20,15 +20,6 @@ const Projects = () => {
         <h2 className={styles.heading}>Top Projects</h2>
         <Project
           subtitle="Project One"
-          title="Arima"
-          description="A functional and visually appealing Anime Wiki application built with Next.js, enabling users to discover and explore top-rated, upcoming, and currently airing anime."
-          image={Arima}
-          techStack={['React.js', 'Next.js', 'React Bootstrap', 'Sass']}
-          githubUrl="https://github.com/stanlee17/arima"
-          liveUrl="https://thearima.vercel.app/"
-        />
-        <Project
-          subtitle="Project Two"
           title="MMOList"
           description="A full-stack MMORPG info application project created to provide users with the ability to explore a wide range of MMORPG games, including those in development, undergoing beta testing, or currently available to play."
           image={MMOList}
@@ -41,6 +32,15 @@ const Projects = () => {
           ]}
           githubUrl="https://github.com/stanlee17/mmolist"
           liveUrl="https://mmolist.onrender.com"
+        />
+        <Project
+          subtitle="Project Two"
+          title="Arima"
+          description="A visually appealing and user-friendly Anime Wiki application built with Next.js, enabling users to discover and explore top-rated, upcoming, and currently airing anime."
+          image={Arima}
+          techStack={['React.js', 'Next.js', 'React Bootstrap', 'Sass']}
+          githubUrl="https://github.com/stanlee17/arima"
+          liveUrl="https://thearima.vercel.app/"
         />
         <Project
           subtitle="Project Three"

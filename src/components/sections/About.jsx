@@ -29,14 +29,20 @@ const About = () => {
         <div className={styles.aboutMe}>
           <h2 className={styles.heading}>About Me</h2>
           <p className={styles.paragraph}>
-            Welcome to my Portfolio site! I'm Yves, a <span>web developer</span>{' '}
-            who specializes in <span>front-end development</span> as I am more
-            design oriented. Being able to witness my creation and ideas be
-            brought into reality onto the internet really began to captivate me.
-            I am very eager to learn new technologies and utilize them to build
-            more innovative and creative projects. Aside from that, I also enjoy
-            fitness, watching anime and playing video games in my spare time.
-            Here are some of the technologies that I have been working with:
+            My journey started when I saw particular video about a youtuber
+            getting a job as a web developer within 3 months self taught without
+            needing a degree. This immediately piqued my interest in learning
+            coding and by the time I finished high school, I already had a good
+            grasp of HTML CSS, JavaScript and a bit of React. Instead of going
+            to university, I decided to take a TAFE course in{' '}
+            <span>
+              Diploma of Information Technology (Full Stack Development)
+            </span>{' '}
+            in Holmesglen for a year to pursue my career as a web developer. I
+            used all of the knowledge that I gained from that course and built
+            projects such as this portfolio website and the other three projects
+            that you can have a look at the projects section of this portfolio.
+            Here are some the technologies that I have worked with:
           </p>
           <div className={styles.skills}>
             <Technology image={HTML} alt="html5">
