@@ -3,9 +3,11 @@
 .mouseScroll {
   display: block;
   position: absolute;
-  bottom: 10%;
-  left: 50%;
   margin: 0 auto;
+  bottom: 15%;
+  left: 0;
+  right: 0;
+  text-align: center;
   cursor: pointer;
   width: 24px;
   height: 100px;
