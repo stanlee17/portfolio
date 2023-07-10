@@ -18,10 +18,10 @@
 
   & .navLink {
     transition: all 0.4s;
-  }
 
-  & .navLink:hover {
-    color: $primaryColor;
+    &:hover {
+      color: $primaryColor;
+    }
   }
 
   @include devices(laptop) {

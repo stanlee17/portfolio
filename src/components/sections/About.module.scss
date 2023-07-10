@@ -34,6 +34,10 @@
 
   @include devices(tablet) {
     padding: 8rem 0 5rem 0;
+
+    & .aboutMe {
+      text-align: center;
+    }
   }
 
   @include devices(mobile) {

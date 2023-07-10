@@ -29,19 +29,20 @@ const About = () => {
         <div className={styles.aboutMe}>
           <h2 className={styles.heading}>About Me</h2>
           <p className={styles.paragraph}>
-            My journey started when I saw particular video about a youtuber
-            getting a job as a web developer within 3 months self taught without
-            needing a degree. This immediately piqued my interest in learning
-            coding and by the time I finished high school, I already had a good
-            grasp of HTML CSS, JavaScript and a bit of React. Instead of going
-            to university, I decided to take a TAFE course in{' '}
+            My journey began when I saw particular video about a YouTuber who
+            managed to land a web developer job within just three months of
+            self-teaching, without requiring a degree. This immediately sparked
+            my interest in coding and by the time I completed high school, I had
+            already developed a strong grasp of HTML, CSS, JavaScript, and even
+            dabbled in React. Instead of going to university, I decided to take
+            a TAFE course in{' '}
             <span>
               Diploma of Information Technology (Full Stack Development)
             </span>{' '}
-            in Holmesglen for a year to pursue my career as a web developer. I
-            used all of the knowledge that I gained from that course and built
-            projects such as this portfolio website and the other three projects
-            that you can have a look at the projects section of this portfolio.
+            at Holmesglen to pursue my career as a web developer. I applied all
+            the knowledge I gained during the course to build various projects,
+            including this portfolio website and three other three projects,
+            which you can explore in the projects section of this portfolio.
             Here are some the technologies that I have worked with:
           </p>
           <div className={styles.skills}>

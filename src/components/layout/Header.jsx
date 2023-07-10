@@ -1,8 +1,8 @@
 // Import React modules
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import Hamburger from 'hamburger-react';
-import { scroller } from 'react-scroll';
+import { pageScroller } from '../../utils';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 
 // Import offcanvas
@@ -19,6 +19,8 @@ const inlineStyle = {
 };
 
 const Header = () => {
+  const location = useLocation(); // once ready it returns the 'window.location' object
+  const [url, setUrl] = useState(null);
   const [bgColor, setBgColor] = useState(false);
   const [show, setShow] = useState(false);
 
@@ -32,16 +34,10 @@ const Header = () => {
     }
   };
 
-  const pageScroller = (to, offset) => {
-    scroller.scrollTo(to, {
-      smooth: true,
-      spy: true,
-      offset,
-      duration: 0,
-    });
-  };
-
-  window.addEventListener('scroll', changeColor);
+  useEffect(() => {
+    window.addEventListener('scroll', changeColor);
+    setUrl(location.pathname);
+  }, [location]);
 
   return (
     <Navbar
@@ -71,6 +67,7 @@ const Header = () => {
           <Nav.Link
             as={Link}
             to="/"
+            activeClass="active"
             className={`me-4 ${styles.navLink}`}
             onClick={() => pageScroller('home', -70)}
           >

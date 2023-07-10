@@ -17,22 +17,6 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <p>&copy; {getCurrentYear()} Yves Koesumo</p>
-      <div className={styles.socialMedia}>
-        <Link
-          target="_blank"
-          to="https://github.com/stanlee17"
-          className={styles.link}
-        >
-          <IoLogoGithub size={20} />
-        </Link>
-        <Link
-          target="_blank"
-          to="https://www.linkedin.com/in/yves-koesumo-587361169/"
-          className={styles.link}
-        >
-          <IoLogoLinkedin size={20} />
-        </Link>
-      </div>
     </footer>
   );
 };

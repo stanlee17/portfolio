@@ -1,28 +1,13 @@
 @use '../../styles/scss/abstracts/' as *;
 
 .footer {
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   text-align: center;
   background: $darkColor;
   color: $white;
   font-family: $primaryFont;
 
   & p {
-    margin-bottom: 0.5rem;
-  }
-
-  & .socialMedia {
-    & .link {
-      color: $white;
-      transition: color 0.3s ease-in-out;
-    }
-
-    & .link:hover {
-      color: $primaryColor;
-    }
-
-    & .link:not(:last-child) {
-      margin-right: 0.5rem;
-    }
+    margin-bottom: 0rem;
   }
 }

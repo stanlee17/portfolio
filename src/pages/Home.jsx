@@ -7,6 +7,8 @@ import About from '../components/sections/About';
 import Projects from '../components/sections/Projects';
 import Contact from '../components/sections/Contact';
 
+import MouseScroll from '../components/common/MouseScroll/MouseScroll';
+
 // Import styles
 import styles from './Home.module.scss';
 
@@ -30,6 +32,7 @@ const Home = () => {
             speed={{ type: 'keyStrokeDelayInMs', value: 100 }}
             repeat={Infinity}
           />
+          <MouseScroll />
         </div>
       </div>
       <About />
