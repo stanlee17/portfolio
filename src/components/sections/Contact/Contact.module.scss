@@ -1,4 +1,4 @@
-@use '../../styles/scss/abstracts/' as *;
+@use '../../../styles/scss/abstracts/' as *;
 
 .contact {
   font-family: $primaryFont;
@@ -14,7 +14,7 @@
   }
 
   & .paragraph {
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     margin-bottom: 1.5rem;
 
     & .link {
@@ -24,6 +24,7 @@
   }
 
   @include devices(mobile) {
+    padding-top: 3rem;
     padding-bottom: 7rem;
 
     & p {

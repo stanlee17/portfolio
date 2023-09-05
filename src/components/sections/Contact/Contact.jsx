@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ButtonLink from '../common/ButtonLink/ButtonLink';
+import ButtonLink from '../../common/ButtonLink/ButtonLink';
 import { Container } from 'react-bootstrap';
 
 // Import Styles

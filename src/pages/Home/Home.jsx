@@ -1,13 +1,13 @@
 import React from 'react';
-import background from '../assets/background.webm';
+import background from '../../assets/background.webm';
 import { TypeAnimation } from 'react-type-animation';
 
 // Import sections
-import About from '../components/sections/About';
-import Projects from '../components/sections/Projects';
-import Contact from '../components/sections/Contact';
+import About from '../../components/sections/About/About';
+import Projects from '../../components/sections/Projects/Projects';
+import Contact from '../../components/sections/Contact/Contact';
 
-import MouseScroll from '../components/common/MouseScroll/MouseScroll';
+import MouseScroll from '../../components/common/MouseScroll/MouseScroll';
 
 // Import styles
 import styles from './Home.module.scss';
@@ -27,7 +27,7 @@ const Home = () => {
             speed={{ type: 'keyStrokeDelayInMs', value: 100 }}
           />
           <TypeAnimation
-            sequence={['Web Developer', 1000]}
+            sequence={['Front End Developer', 1000]}
             className={styles.heroSub}
             speed={{ type: 'keyStrokeDelayInMs', value: 100 }}
             repeat={Infinity}

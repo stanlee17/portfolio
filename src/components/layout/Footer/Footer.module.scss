@@ -1,9 +1,10 @@
-@use '../../styles/scss/abstracts/' as *;
+@use '../../../styles/scss/abstracts/' as *;
 
 .footer {
   padding: 1.5rem 0;
   text-align: center;
   background: $darkColor;
+  font-size: 0.9rem;
   color: $white;
   font-family: $primaryFont;
 

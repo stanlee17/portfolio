@@ -1,4 +1,4 @@
-@use '../../styles/scss/abstracts/' as *;
+@use '../../../styles/scss/abstracts/' as *;
 
 .navbar {
   position: fixed;
@@ -17,6 +17,7 @@
   }
 
   & .navLink {
+    font-size: 0.95rem;
     transition: all 0.4s;
 
     &:hover {

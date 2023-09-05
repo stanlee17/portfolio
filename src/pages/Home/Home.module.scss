@@ -1,9 +1,9 @@
-@use '../styles/scss/abstracts/' as *;
+@use '../../styles/scss/abstracts/' as *;
 
 .home {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   font-family: $secondaryFont;
 
   & .overlay {

@@ -2,11 +2,11 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Hamburger from 'hamburger-react';
-import { pageScroller } from '../../utils';
+import { pageScroller } from '../../../utils';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 
 // Import offcanvas
-import NavOffcanvas from './NavOffcanvas';
+import NavOffcanvas from '../NavOffcanvas/NavOffcanvas';
 
 // Import Styles
 import styles from './Header.module.scss';
@@ -43,7 +43,7 @@ const Header = () => {
     <Navbar
       expand="lg"
       variant="dark"
-      className={`sticky-top py-3 ${styles.navbar}`}
+      className={`sticky-top py-4 ${styles.navbar}`}
       style={bgColor ? inlineStyle.navbar : {}}
     >
       <Container>

@@ -21,6 +21,7 @@ const Project = ({
   return (
     <div className={styles.project}>
       <div className={styles.wrapper}>
+        {/* PROJECT IMAGE WINDOW & PREVIEW IMAGE */}
         <div className={styles.imageWrapper}>
           <div className={styles.window}>
             <div className={styles.windowButtons}>
@@ -31,12 +32,16 @@ const Project = ({
           </div>
           <img className={styles.image} src={image} alt={title} />
         </div>
+
+        {/* PROJECT CONTENT: TITLE, SUBTITLE, DESCRIPTION, DEMO */}
         <div className={styles.content}>
           <h5>{subtitle}</h5>
           <h3>{title}</h3>
           <div className={styles.descOverlay}>
             <p>{description}</p>
           </div>
+
+          {/* TECH STACK */}
           <div className={styles.techStack}>
             {techStack &&
               techStack.map((tech) => (

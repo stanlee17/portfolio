@@ -2,13 +2,13 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 
 // Import common components
-import Project from '../common/Project/Project';
+import Project from '../../common/Project/Project';
 
 // Import assets
-import MMOList from '../../assets/projects/mmolist.webp';
-import Colorwind from '../../assets/projects/colorwind.webp';
-import Arima from '../../assets/projects/arima.webp';
-import PayAPI from '../../assets/projects/payapi.webp';
+import MMOList from '../../../assets/projects/mmolist.webp';
+import Colorwind from '../../../assets/projects/colorwind.webp';
+import Arima from '../../../assets/projects/arima.webp';
+import PayAPI from '../../../assets/projects/payapi.webp';
 
 // Import styles
 import styles from './Projects.module.scss';
@@ -17,7 +17,7 @@ const Projects = () => {
   return (
     <div id="projects" className={styles.projects}>
       <Container>
-        <h2 className={styles.heading}>Top Projects</h2>
+        <h2 className={styles.heading}>Some of my latest projects</h2>
         <Project
           subtitle="Project One"
           title="MMOList"
@@ -32,6 +32,9 @@ const Projects = () => {
           ]}
           githubUrl="https://github.com/stanlee17/mmolist"
           liveUrl="https://mmolist.onrender.com"
+          demoEmail="demo@example.com"
+          demoPassword="demo1234"
+          demo
         />
         <Project
           subtitle="Project Two"
