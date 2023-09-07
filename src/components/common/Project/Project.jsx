@@ -44,8 +44,10 @@ const Project = ({
           {/* TECH STACK */}
           <div className={styles.techStack}>
             {techStack &&
-              techStack.map((tech) => (
-                <div className={styles.tech}>{tech}</div>
+              techStack.map((tech, index) => (
+                <div key={index} className={styles.tech}>
+                  {tech}
+                </div>
               ))}
           </div>
           <ButtonLink url={githubUrl} className="me-4">

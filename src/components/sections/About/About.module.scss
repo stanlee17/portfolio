@@ -32,9 +32,17 @@
     margin-top: 1rem;
   }
 
-  @include devices(tablet) {
-    padding: 8rem 0 5rem 0;
+  @include devices(laptop) {
+    padding: 3rem 0;
 
+    .aboutMe {
+      .heading {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  @include devices(tablet) {
     & .aboutMe {
       text-align: center;
     }

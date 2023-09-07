@@ -11,6 +11,7 @@ import MouseScroll from '../../components/common/MouseScroll/MouseScroll';
 
 // Import styles
 import styles from './Home.module.scss';
+import Frontendmentor from '../../components/sections/Frontendmentor/Frontendmentor';
 
 const Home = () => {
   return (
@@ -37,6 +38,7 @@ const Home = () => {
       </div>
       <About />
       <Projects />
+      <Frontendmentor />
       <Contact />
     </div>
   );

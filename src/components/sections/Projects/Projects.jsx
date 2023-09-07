@@ -23,13 +23,7 @@ const Projects = () => {
           title="MMOList"
           description="A full-stack MMORPG info application project created to provide users with the ability to explore a wide range of MMORPG games, including those in development, undergoing beta testing, or currently available to play."
           image={MMOList}
-          techStack={[
-            'Firebase',
-            'Express.js',
-            'React.js',
-            'Node.js',
-            'Styled Components',
-          ]}
+          techStack={['Firebase', 'Express.js', 'React.js', 'Node.js']}
           githubUrl="https://github.com/stanlee17/mmolist"
           liveUrl="https://mmolist.onrender.com"
           demoEmail="demo@example.com"
@@ -41,7 +35,7 @@ const Projects = () => {
           title="Arima"
           description="A visually appealing and user-friendly Anime Wiki application built with Next.js, enabling users to discover and explore top-rated, upcoming, and currently airing anime."
           image={Arima}
-          techStack={['React.js', 'Next.js', 'React Bootstrap', 'Sass']}
+          techStack={['Next.js', 'Typescript', 'React Bootstrap', 'Sass']}
           githubUrl="https://github.com/stanlee17/arima"
           liveUrl="https://thearima.vercel.app/"
         />

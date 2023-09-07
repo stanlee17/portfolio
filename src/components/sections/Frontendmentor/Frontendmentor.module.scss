@@ -1,0 +1,87 @@
+@use '../../../styles/scss/abstracts/' as *;
+
+.frontendMentor {
+  padding: 5rem 0;
+
+  .heading {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $primaryColor;
+    margin-bottom: 4rem;
+  }
+
+  .solutions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+
+  .imageWrapper {
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+
+    .window {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      min-height: 35px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      background-color: $darkColor;
+    }
+
+    .windowButtons {
+      margin: 0 1rem;
+
+      & img {
+        margin-right: 0.4rem;
+      }
+    }
+
+    .image {
+      width: 100%;
+      height: 100%;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin: 1rem 0;
+  }
+
+  .techStack {
+    display: flex;
+    gap: 1.5rem;
+    cursor: default;
+  }
+
+  .tech {
+    font-size: 0.85rem;
+    transition: all 0.5s;
+
+    &:hover {
+      color: $primaryColor;
+    }
+  }
+
+  @include devices(laptop) {
+    padding: 2rem 0;
+
+    .heading {
+      font-size: 2rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .solutions {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+
+    .techStack {
+      justify-content: center;
+    }
+  }
+}
