@@ -48,15 +48,6 @@ const Projects = () => {
           githubUrl="https://github.com/stanlee17/colorwind"
           liveUrl="http://colorwind.xyz/"
         />
-        <Project
-          subtitle="Project Four"
-          title="PayAPI"
-          description="A 4-page mock company website built with the objective of gaining familiarity with the Tailwind CSS framework. The website's design was provided by frontendmentor.io as one of their advanced challenges."
-          image={PayAPI}
-          techStack={['React.js', 'Tailwind CSS', 'React Bootstrap']}
-          githubUrl="https://github.com/stanlee17/payapi"
-          liveUrl="https://payapi-5gi.pages.dev/"
-        />
       </Container>
     </div>
   );
